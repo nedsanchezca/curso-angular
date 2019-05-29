@@ -1,0 +1,12 @@
+<div class="container">
+    <h2>
+      Formulario
+    </h2>
+    <form>
+      <div class="form-group">
+        <label for="idPersona">ID</label>
+        <input type="text" class="form-control" id='idPersona' placeholder="Id de la persona" [(ngModel)]="persona.id" name="idPersona" (change)="selectPersona($event)">
+      </div>
+      <button type="submit" class="btn btn-primary" (click) = "mostrar()">mostrar</button>
+    </form>      
+  </div>
